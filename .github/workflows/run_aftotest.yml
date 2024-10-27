@@ -1,15 +1,15 @@
 name: ran aftotests
-on:
-workflow_dispatch:
-inputs:
-deployment_target:
-description: select tests to run required: true
-type: choice
-default: all
-options:
- - all
+    on:
+      workflow_dispatch:
+        inputs:
+           deployment_target:
+         description: select tests to run required: true
+   type: choice
+    default: all
+    options:
+        - all
 
-jobs:
+   jobs:
 run-tests:
 runs-on: ubuntu-latest 
 name: Tests 
